@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D0D0D0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="3dp">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:id="@+id/crate_goal_image"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/change_goal_image"
+            android:text="목표 사진 변경"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="목표 이름"/>
+            
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:id="@+id/create_goal_title"
+                android:layout_marginLeft="30dp"
+                android:hint="목표 이름"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="카테고리 설정"/>
+
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:id="@+id/create_goal_category"
+                android:layout_marginLeft="5dp"
+                android:entries="@array/category_arrays"
+                android:prompt="@string/category_prompt"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="시작 날짜"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:id="@+id/crate_goal_start"
+                android:layout_marginLeft="30dp"
+                android:text="날짜 선택"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="종료 날짜"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:id="@+id/create_goal_end"
+                android:layout_marginLeft="30dp"
+                android:text="날짜 선택"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:id="@+id/write_complete"
+                android:background="#AA68CC"
+                android:text="작성 완료"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="#AA68CC">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#AA68CC"
+                android:src="@drawable/goal"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#AA68CC" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:id="@+id/th">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <EditText
+                        android:layout_width="230dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/nickname_sign_in"
+                        android:hint="Nickname"
+                        android:layout_margin="10dp"/>
+                    <EditText
+                        android:layout_width="230dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/pw_sign_in"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:layout_margin="10dp"/>
+                    <Button
+                        android:id="@+id/sign_in_button"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:text="SIGN IN"
+                        android:textColor="#FFFFFF"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#AA68CC"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <EditText
+                        android:layout_width="230dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/nickname_sign_up"
+                        android:hint="Nickname"
+                        android:layout_margin="10dp"/>
+                    <EditText
+                        android:layout_width="230dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/pw_sign_up"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:layout_margin="10dp"/>
+                    <EditText
+                        android:layout_width="230dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/re_pw_sign_up"
+                        android:hint="Re-Password"
+                        android:inputType="textPassword"
+                        android:layout_margin="10dp"/>
+                    <Button
+                        android:id="@+id/sign_up_button"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:text="SIGN UP"
+                        android:textColor="#FFFFFF"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#AA68CC"/>
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

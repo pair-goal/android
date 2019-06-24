@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">pairgoal</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="baseUrl">http://localhost:3000</string>
+    
+    <string name="category_prompt">카테고리 선택</string>
+    <string-array name="category_arrays">
+        <item name="공부">공부</item>
+        <item name="습관">습관</item>
+        <item name="운동">운동</item>
+        <item name="기타">기타</item>
+    </string-array>
+</resources>
